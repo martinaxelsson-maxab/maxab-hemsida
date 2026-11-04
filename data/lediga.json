@@ -1,0 +1,16 @@
+{
+  "objekt": [
+    {
+      "id": "exempel-objekt",
+      "published": false,
+      "title": "Exempelobjekt – visas inte på sidan",
+      "type": "industri",
+      "address": "Exempeladress, Arboga",
+      "areaSqm": 500,
+      "description": "Mall som visar fälten. Besökare ser inte objektet så länge published är false. Kopiera blocket, byt ut texten och sätt published till true när en lokal ska annonseras. Förhandsgranska med ?utkast=1.",
+      "images": [],
+      "access": "Enligt överenskommelse",
+      "rent": "Enligt överenskommelse"
+    }
+  ]
+}
