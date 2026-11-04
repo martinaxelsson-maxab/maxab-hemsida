@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exempel – internt – Maxab Fastigheter</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-root="..">
+  <a class="skip" href="#innehall">Hoppa till innehållet</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html">
+        <img src="../assets/logo-liggande.svg" alt="Maxab Fastigheter" width="272" height="58">
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Meny</button>
+      <nav id="site-nav" class="site-nav" aria-label="Huvudmeny">
+        <a href="../index.html">Start</a>
+        <a href="../lediga.html">Lediga lokaler</a>
+        <a href="../felanmalan.html">Felanmälan</a>
+      </nav>
+    </div>
+  </header>
+  <p class="wrap gate" data-intern-gate role="status">Kontrollerar inloggning…</p>
+  <div class="intern-bar wrap" data-intern-bar hidden>
+    <p class="intern-label">Internt</p>
+    <div class="intern-session">
+      <p data-intern-user hidden></p>
+      <button type="button" class="text-button" data-intern-logout hidden>Logga ut</button>
+    </div>
+  </div>
+  <div class="wrap page intern-layout" data-intern-shell hidden>
+    <nav class="intern-nav" aria-label="Interna sidor">
+      <a href="index.html">Start</a>
+      <a href="exempel.html" aria-current="page">Exempel</a>
+      <div data-intern-pages></div>
+    </nav>
+    <main id="innehall">
+      <h1>Exempel på undersida</h1>
+      <p class="lead">Kopiera den här filen när ett verktyg ska läggas till. Skriv inga avtal, hyresgästlistor eller andra känsliga uppgifter i html-filen. Sådant hämtas från Supabase efter inloggning.</p>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Maxab Fastigheter AB</p>
+        <p class="footer-note">Internt område</p>
+      </div>
+      <a class="login-link" href="../logga-in.html">Logga in</a>
+    </div>
+  </footer>
+  <script src="../js/config.js"></script>
+  <script type="module" src="../js/intern.js"></script>
+</body>
+</html>

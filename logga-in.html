@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logga in – Maxab Fastigheter</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Inloggning för anställda hos Maxab Fastigheter.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-root=".">
+  <a class="skip" href="#innehall">Hoppa till innehållet</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-liggande.svg" alt="Maxab Fastigheter" width="272" height="58">
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Meny</button>
+      <nav id="site-nav" class="site-nav" aria-label="Huvudmeny">
+        <a href="index.html">Start</a>
+        <a href="lediga.html">Lediga lokaler</a>
+        <a href="felanmalan.html">Felanmälan</a>
+      </nav>
+    </div>
+  </header>
+  <main id="innehall" class="page">
+    <div class="wrap narrow">
+      <h1>Logga in</h1>
+      <p class="lead">För anställda. Skriv din e-postadress så skickar vi en engångslänk. Det finns inget lösenord i sidans kod.</p>
+      <p class="hint" data-login-note hidden>Inloggningen är inte aktiverad ännu. Tills dess kan ingen logga in här.</p>
+      <form id="login-form" class="form">
+        <div class="field">
+          <label for="epost">E-post</label>
+          <input id="epost" name="epost" type="email" autocomplete="username" inputmode="email" maxlength="120" required>
+        </div>
+        <button class="button" type="submit">Skicka inloggningslänk</button>
+        <p class="form-status" role="status" data-login-status></p>
+      </form>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Maxab Fastigheter AB</p>
+        <p class="footer-note">Lokaler för industri, handel och kontor i Arboga.</p>
+      </div>
+      <a class="login-link" href="logga-in.html" aria-current="page">Logga in</a>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>

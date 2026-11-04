@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felanmälan – Maxab Fastigheter</title>
+  <meta name="description" content="Anmäl ett fel i en lokal hos Maxab Fastigheter i Arboga.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-root=".">
+  <a class="skip" href="#innehall">Hoppa till innehållet</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-liggande.svg" alt="Maxab Fastigheter" width="272" height="58">
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Meny</button>
+      <nav id="site-nav" class="site-nav" aria-label="Huvudmeny">
+        <a href="index.html">Start</a>
+        <a href="lediga.html">Lediga lokaler</a>
+        <a href="felanmalan.html" aria-current="page">Felanmälan</a>
+      </nav>
+    </div>
+  </header>
+  <main id="innehall" class="page">
+    <div class="wrap narrow">
+      <h1>Felanmälan</h1>
+      <p class="lead">Beskriv felet och vilken lokal det gäller. Anmälan går till förvaltningen.</p>
+      <form class="form" action="https://formsubmit.co/thomas@maxab.com" method="POST" enctype="multipart/form-data" accept-charset="UTF-8" data-maxab-form="felanmalan" data-thanks="felanmalan">
+        <input type="hidden" name="_subject" value="Felanmälan via maxab.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="">
+        <input type="hidden" name="_replyto" value="">
+        <div class="honey" aria-hidden="true">
+          <label>Lämna tomt <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <p class="hint required-note">Fält med * är obligatoriska.</p>
+        <div class="field">
+          <label for="namn">Namn <span aria-hidden="true">*</span></label>
+          <input id="namn" name="Namn" type="text" autocomplete="name" maxlength="120" required>
+        </div>
+        <div class="field">
+          <label for="telefon">Telefon <span aria-hidden="true">*</span></label>
+          <input id="telefon" name="Telefon" type="tel" inputmode="tel" autocomplete="tel" maxlength="40" required>
+        </div>
+        <div class="field">
+          <label for="epost">E-post <span aria-hidden="true">*</span></label>
+          <input id="epost" name="E-post" type="email" autocomplete="email" maxlength="120" required>
+        </div>
+        <div class="field">
+          <label for="fastighet">Fastighet eller adress <span aria-hidden="true">*</span></label>
+          <input id="fastighet" name="Fastighet" type="text" autocomplete="street-address" maxlength="200" required>
+        </div>
+        <div class="field">
+          <label for="beskrivning">Beskrivning av felet <span aria-hidden="true">*</span></label>
+          <textarea id="beskrivning" name="Beskrivning" rows="6" maxlength="5000" required></textarea>
+        </div>
+        <div class="field">
+          <label for="bild">Bild</label>
+          <input id="bild" name="Bild" type="file" accept="image/*">
+          <p class="hint">Valfri. En vanlig bild av felet räcker.</p>
+        </div>
+        <button class="button" type="submit">Skicka felanmälan</button>
+        <p class="hint">Anmälan skickas till thomas@maxab.com. En kort kontroll mot skräppost kan visas innan den går iväg.</p>
+      </form>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Maxab Fastigheter AB</p>
+        <p class="footer-note">Lokaler för industri, handel och kontor i Arboga.</p>
+      </div>
+      <a class="login-link" href="logga-in.html">Logga in</a>
+    </div>
+  </footer>
+  <script type="module" src="js/site.js"></script>
+</body>
+</html>
